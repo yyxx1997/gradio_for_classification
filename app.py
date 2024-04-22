@@ -88,7 +88,7 @@ with gr.Blocks(theme=my_theme, title='Brand_Tone_of_Voice_demo') as demo:
                                     info="Please input a sentence here:")
 
         tab_output = gr.DataFrame(label='Predictions:', 
-                                  headers=["Label", "Probability"],
+                                  headers=["Category", "Probability"],
                                   datatype=["str", "number"],
                                   interactive=False)
         with gr.Row():
